@@ -1,0 +1,17 @@
+{% load static %}
+<div class="border-right border-warning h-100">
+    <div class="text-center">
+        <img src="{% static 'core/images/bams.jpg' %}" 
+        alt="ProfilePic" class="img-fluid rounded-circle mt-5" width="100px" height="100px">
+        <h3 class="text-dark mt-3 st-font">Irstenn B.N.</h3>
+    </div>
+    <hr class="border-dark">
+ 
+    <nav class="nav flex-column text-center">
+        <a href="{% url 'home' %}" class="nav-link text-dark {{home}}">Home</a>
+        <a href="{% url 'services' %}" class="nav-link text-dark {{services}}">Services</a>
+        <a href="{% url 'skill' %}" class="nav-link text-dark {{skill}}">Skills</a>
+        <a href="{% url 'contact' %}" class="nav-link text-dark {{contact}}">Contact</a>
+        <a href="https://github.com/Irstenn" class="nav-link text-dark">My projects</a>
+    </nav>
+</div>
